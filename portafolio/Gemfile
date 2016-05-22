@@ -33,6 +33,8 @@ gem 'sprockets-es6'
 
 gem 'jspdf-rails'
 
+gem 'bootstrap-social-rails'
+
 #add 05/20/2016
 
 
