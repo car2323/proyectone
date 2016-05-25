@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users
-  
 
+  
+devise_for :users, controllers: {registrations: "registrations", sessions: "sessions"}
 
 
   get 'welcome/index' #add 05/19/2016
   root 'welcome#index' 
+
+  #get 'informations/index'
+  get 'informations' => 'informations#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
