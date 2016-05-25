@@ -119,8 +119,22 @@
 
     <!-- Page Content -->
     <div class="container">
+                  
 
         <div class="row">
+
+<%if user_signed_in?%> 
+                     <a class="btn btn-primary floatrigth"href="/informations">Projects and Gallery</a>     
+                     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-danger" %></t><p>
+                     <a class="floatrigth"href="/users/edit">User: </a><%=current_user.email%>&nbsp</t>
+                     
+                  <%else%>
+                     <a class="btn btn-primary floatrigth"href="/users/sign_in"> Login </a> 
+                     <a class="btn btn-primary floatrigth" href="/users/sign_up"> Sign up </a> </p>
+                     
+                  <%end%>
+
+
             <div class="col-lg-12">
                 <h1 class="name-carlos">Carlos Cardo</h1>
                 <p class="text-justify text-carlos">Technically-minded Audio Visual Technician  and Software Programming Developer with 10 years of experience and exceptional skills with setting up, connecting and operating equipment for conferences, events and performances. Possesses extensive product knowledge of audiovisual and computer equipment and components. Has strong troubleshooting, improvement and repair abilities. Specializes in software development, computer network, video and audio protocols.</p>
@@ -144,20 +158,10 @@
 
 
         <!--*************************-->
+                 <br>
+                <h4><p class="text-carlos">To see the programming projects and gallery events designed by Carlos Cardo just Login or Sign up in the web application </h4>
 
-                <h4><p class="text-carlos">To see the programming projects designed by Carlos Cardo just login in the web application </h4>
-
-                  <%if user_signed_in?%> 
-                     <a class="btn btn-primary"href="/informations">Projects and Gallery</a>     
-                     <t class="btn btn-danger"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></t><p>
-                     <a href="/users/edit">User: </a><%=current_user.email%>&nbsp</t>
-                     
-                  <%else%>
-                     <a class="btn btn-primary"href="/users/sign_in"> Login </a> 
-                     <a class="btn btn-primary" href="/users/sign_up"> Sign up </a> </p>
-                     
-                  <%end%> 
-
+                 
         <!--*************************-->
 
                  
