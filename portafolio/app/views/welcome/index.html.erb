@@ -123,10 +123,15 @@
 
         <div class="row">
 
-<%if user_signed_in?%> 
-                     <a class="btn btn-primary floatrigth"href="/informations">Projects and Gallery</a>     
-                     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-danger" %></t><p>
-                     <a class="floatrigth"href="/users/edit">User: </a><%=current_user.email%>&nbsp</t>
+                  <%if user_signed_in?%> 
+                  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-danger floatrigth1" %></t>
+                     <a class="btn btn-primary floatrigth1"href="/informations">Projects and Gallery</a>     
+                     <br>
+                     <br>
+                     <br>
+                     <t class="floatrigth2"><%=current_user.email%>&nbsp</t>
+                     <a class="floatrigth2"href="/users/edit">User: </a>
+
                      
                   <%else%>
                      <a class="btn btn-primary floatrigth"href="/users/sign_in"> Login </a> 
@@ -159,7 +164,7 @@
 
         <!--*************************-->
                  <br>
-                <h4><p class="text-carlos">To see the programming projects and gallery events designed by Carlos Cardo just Login or Sign up in the web application </h4>
+                <h4><p class="text-carlos">To see the programming projects and gallery events designed by Carlos Cardo just <a href="/users/sign_in">Login</a> or <a href="/users/sign_up">Sign up</a> in the web application </h4>
 
                  
         <!--*************************-->
