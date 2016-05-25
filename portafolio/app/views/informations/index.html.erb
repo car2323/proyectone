@@ -119,6 +119,118 @@
     </header>
 
 
+<!-- Page Content -->
+    <div class="container">
+                  
+
+        <div class="row">
+
+                  <%if user_signed_in?%> 
+                  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-danger floatrigth1" %></t>
+                     <a class="btn btn-primary floatrigth1"href="/informations">Home</a>     
+                     <br>
+                     <br>
+                     <br>
+                     <t class="floatrigth2"><%=current_user.email%>&nbsp</t>
+                     <a class="floatrigth2"href="/users/edit">User: </a>
+
+                     
+                  <%else%>
+                     <a class="btn btn-primary floatrigth"href="/users/sign_in"> Login </a> 
+                     <a class="btn btn-primary floatrigth" href="/users/sign_up"> Sign up </a> </p>
+                     
+                  <%end%>
+
+
+            <div class="col-lg-12">
+                <h1 class="name-carlos">Relevant Experience</h1>
+                <p class="text-justify text-carlos">Senior Audio Visual Technician                                                                                    2011 – Present
+AVS is the premier technology production company for many Fortune 500 firms in South Florida and the in-house A/V provider for luxurious hotels such as the Downtown Miami Marriott Marquis, JW Marriott and Dadeland Marriott, generating over US $5 Million in revenue each year while holding more than US$15 Million in cutting-edge technology equipment. Some of its main clients are; Roche, Pfizer, Baptist Health, Microsoft, MasterCard, JBL, Leon Medical Center, Citibank, Telemundo, UDT, Tallen, and Political Rallies. www.audiovisualsvc.com</p>
+            </div>
+            <br>
+            <hr>
+            <div class="col-lg-12">
+                <h1 class="name-programming" >Coding</h1>
+                <h3><p class="name-video">Programing Language</p></h3>
+                <p class="text-carlos">RUBY on Rails, JS, CSS, HTML, PHP, C, C++, PASCAL, COBOL, Visual Basic</p>
+                <h3><p class="name-video">Data Base</p></h3>
+                <p>MySQL,PostgreSQL, SQL Query, SQLite</p>
+                <h3><p class="name-video">O/S</p></h3>
+                <p>Windows 10 /Windows 8.1/ Windows 7/ Windows vista/ Windows XP, Mac OSX, Linux (Ubuntu)
+                </p>
+                <h3><p class="name-video">Network Skills</p></h3>
+                <p>TCP/IP Networking in Microsoft & UNIX Environments LAN/WAN (routers, switchers, printers & Cat5/Cat6 wiring), Cisco IP Phones, DHCP, DNS, SharePoint, Citrix installation, Windows Active Directory</p>
+                <h3><p class="name-video">Software Proficiency</p></h3>
+                <p>Final Cut, Sublime Text, github desktop, Postman, MacX Video Converter Pro, sqlitebrowser, Adobe Premiere Pro, Adobe Audition, Flash, Fireworks, Dreamweaver, LiveType IDVD and MS Office 2013-2016
+                </p>
+
+
+        <!--*************************-->
+                 <br>
+                <h4><p class="text-carlos">To see the programming projects and gallery events designed by Carlos Cardo just <a href="/users/sign_in">Login</a> or <a href="/users/sign_up">Sign up</a> in the web application </h4>
+
+                 
+        <!--*************************-->
+
+                 
+            </div>
+            <hr>
+            <br>
+            <div class="col-lg-12">
+                <h1 class="name-audiovisual">Audio Visual Skills</h1>
+                
+            </div>
+        <!--*************************--> 
+
+<!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                
+                <h3>
+                    <p class="name-video">Video Technician</p>
+                </h3>
+                <p class="text-justify text-carlos">Install & Operate video equipment using; SDI, VGA, HDMI, 
+                Cat5 Extenders, RGB-HV, DVI Fiber, Distribution Amplifiers
+                (DA), Video Switchers (Folsom Presentation Pro, Analog Way
+                Pulse 300, Barco PDS-902, Hard Switchers, Blackmagic ATEM 
+                Production Studio), Playback Pro, Projection Equipment(4:3 & 16:9
+                 projectors 2k, 4k, 7k, 8k DLP, 10k, 20k DLP), LED Panel 
+                Absen 3mm with Nova & Analog Way Tetra-VIO, 
+                Recording over Aja Ki Pro, iMAG Video Cameras with 
+                Panasonic AG-HPX370 /AG-HPX570, 
+                Polycom Audio/Video Conference System.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+               
+                <h3>
+                    <p class="name-audio">Audio Technician</p>
+                </h3>
+                <p class="text-justify text-carlos">Install & Operate sound equipment using; Digital Mixers (LS9-16/LS9-32, SoundCraft SI Series, Behringer X32), Digital Snakes or Stage Boxes, iPad Audio Control, Analog Mixers (Compressors, Graphic EQ - 31 bands, Analog Auto Mixers, Danish Interpretation System (DIS Microphones), Frequency Coordination of Wireless Microphone System (Shure UHF-R, ULX, ULX-D, Sennheiser EW100-EW135), Rigging and set-up of speaker systems VRX-932 and Line Array Vertec VT4887, Audio Recording with Marantz system.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                
+                <h3>
+                    <p class="name-lighting">Lighting</p>
+                </h3>
+                <p class="text-justify text-carlos">Install & Operate lighting equipment using; Arri Compact HMI 575W Fresnel, ETC Leko, ETC LEDko, Coemar Up Lights, Coemar Battery Up-Lights, Dimmer Pack, SmartFade Console, DMX 3&5 Pin and Cat5 Wiring</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                
+                <h3>
+                    <p class="name-setup">Setup</p>
+                </h3>
+                <p class="text-justify text-carlos">Ability to work in your show setup, with pipe and drape, hard set, banner, pieces and decoration</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+      
+<hr>
 
 
 
